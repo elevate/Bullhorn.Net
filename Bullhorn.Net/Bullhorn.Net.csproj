@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{96838D59-4ADB-4434-A70B-63293998BB91}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Bullhorn.Net</RootNamespace>
+    <AssemblyName>Bullhorn.Net</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Rest.ClientRuntime.2.3.18\lib\net452\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BullhornClient.cs" />
+    <Compile Include="BullhornRestCredentials.cs" />
+    <Compile Include="Exceptions\RestApiException.cs" />
+    <Compile Include="Helper\AccessTokenInfo.cs" />
+    <Compile Include="Helper\HttpClientFactory.cs" />
+    <Compile Include="Helper\LoginResponseModel.cs" />
+    <Compile Include="Helper\RestApiSession.cs" />
+    <Compile Include="Helper\RestErrorHandler.cs" />
+    <Compile Include="Helper\RestFileManager.cs" />
+    <Compile Include="Helper\RestUriVariablesFactory.cs" />
+    <Compile Include="Helper\RestUrlFactory.cs" />
+    <Compile Include="Helper\UnixTimeConverter.cs" />
+    <Compile Include="IBullhornClient.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance10.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance9.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance8.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance7.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance6.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance5.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance4.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance3.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance2.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\JobOrders\JobOrderCustomObjectInstance1.cs" />
+    <Compile Include="Models\Entitities\Core\CustomObjectInstances\Persons\PersonCustomObjectInstance.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\EntityParams.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\FileParams.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\QueryParams.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\RequestParameters.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\SearchParams.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\Standard\StandardFileParams.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\Standard\StandardQueryParams.cs" />
+    <Compile Include="Models\Entitities\Core\Parameters\Standard\StandardSearchParams.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\File.cs" />
+    <Compile Include="Models\Entitities\Core\Type\AbstractEntity.cs" />
+    <Compile Include="Models\Entitities\Core\Type\CreateEntity.cs" />
+    <Compile Include="Models\Entitities\Embedded\Address.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Appointment.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Branch.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\BusinessSector.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Candidate.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\CandidateCertification.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\CandidateEducation.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\CandidateReference.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\CandidateWorkHistory.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Category.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Certification.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\CertificationGroup.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\ClientContact.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\ClientCorporation.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\CorporateUser.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\JobData.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\JobOrder.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\JobSubmission.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Lead.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Note.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Opportunity.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Person.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Placement.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\PrivateLabel.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Sendout.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Skill.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Specialty.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\StandardFileAttachment.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Task.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\Tearsheet.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\TimeUnit.cs" />
+    <Compile Include="Models\Entitities\Core\Standard\WorkersCompensationRate.cs" />
+    <Compile Include="Models\Entitities\Core\Type\AllRecordsEntity.cs" />
+    <Compile Include="Models\Entitities\Core\Type\BullhornEntity.cs" />
+    <Compile Include="Models\Entitities\Core\Type\QueryEntity.cs" />
+    <Compile Include="Models\Entitities\Core\Type\SearchEntity.cs" />
+    <Compile Include="Models\Entitities\Embedded\LinkedId.cs" />
+    <Compile Include="Models\Entitities\Embedded\OneToMany.cs" />
+    <Compile Include="Models\Entitities\Embedded\OneToManyLinkedId.cs" />
+    <Compile Include="Models\Enums\ChangeType.cs" />
+    <Compile Include="Models\Enums\FileContentType.cs" />
+    <Compile Include="Models\Response\Crud\AbstractCrudResponse.cs" />
+    <Compile Include="Models\Response\Crud\CreateResponse.cs" />
+    <Compile Include="Models\Response\Crud\CrudResponse.cs" />
+    <Compile Include="Models\Response\Crud\DeleteResponse.cs" />
+    <Compile Include="Models\Response\Crud\Message.cs" />
+    <Compile Include="Models\Response\File\FileApiResponse.cs" />
+    <Compile Include="Models\Response\File\FileWrapper.cs" />
+    <Compile Include="Models\Response\File\Standard\StandardFileApiResponse.cs" />
+    <Compile Include="Models\Response\File\Standard\StandardFileWrapper.cs" />
+    <Compile Include="Models\Response\IListWrapper.cs" />
+    <Compile Include="Models\Response\StandardListWrapper.cs" />
+    <Compile Include="Models\Response\StandardWrapper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

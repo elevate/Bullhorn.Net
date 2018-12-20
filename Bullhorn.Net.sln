@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bullhorn.Net", "Bullhorn.Net\Bullhorn.Net.csproj", "{96838D59-4ADB-4434-A70B-63293998BB91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bullhorn.Net.Tests", "Bullhorn.Net.Tests\Bullhorn.Net.Tests.csproj", "{9E737D8F-8726-4D27-8321-0B48E55ADDD7}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96838D59-4ADB-4434-A70B-63293998BB91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96838D59-4ADB-4434-A70B-63293998BB91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96838D59-4ADB-4434-A70B-63293998BB91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96838D59-4ADB-4434-A70B-63293998BB91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E737D8F-8726-4D27-8321-0B48E55ADDD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E737D8F-8726-4D27-8321-0B48E55ADDD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E737D8F-8726-4D27-8321-0B48E55ADDD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E737D8F-8726-4D27-8321-0B48E55ADDD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
