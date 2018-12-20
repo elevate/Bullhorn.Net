@@ -13,7 +13,7 @@ upload a cv.
 
 Add a settings.config to your project with your credentials. Like:
 
-'''
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <appSettings>
@@ -27,6 +27,6 @@ Add a settings.config to your project with your credentials. Like:
     <add key="RestClientSecret" value="YOUR-CLIENTSECRET"/>
   </appSettings>
 </configuration>
-'''
+```
 
 
