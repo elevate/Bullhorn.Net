@@ -13,7 +13,8 @@ upload a cv.
 
 Add a settings.config to your project with your credentials. Like:
 
-'<?xml version="1.0" encoding="utf-8" ?>
+'''
+<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
   <appSettings>
     <add key="RestAuthorizeUrl" value="YOUR-AUTHORIZE-URL"/>
@@ -25,6 +26,7 @@ Add a settings.config to your project with your credentials. Like:
     <add key="RestClientId" value="YOUR-CLIENTID"/>
     <add key="RestClientSecret" value="YOUR-CLIENTSECRET"/>
   </appSettings>
-</configuration>'
+</configuration>
+'''
 
 
