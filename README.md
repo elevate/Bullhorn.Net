@@ -2,7 +2,7 @@
 C# bullhorn .net sdk for the APi. Based on the java sdk
 
 A c# client library for working with the Bullhorn REST API. Handles authentication and objectifies API operations.
-Based on [https://github.com/bullhorn/sdk-rest](Bullhorn sdk rest) java library. 
+Based on [https://github.com/bullhorn/sdk-rest/](Bullhorn sdk rest) java library. 
 
 ## Status
 
