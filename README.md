@@ -1,5 +1,5 @@
 # Bullhorn.Net
-C# bullhorn .net sdk for the APi. Based on the java sdk
+Bullhorn 
 
 A c# client library for working with the Bullhorn REST API. Handles authentication and objectifies API operations.
 Based on Bullhorn sdk rest java library: https://github.com/bullhorn/sdk-rest. 
@@ -28,5 +28,16 @@ Add a settings.config to your project with your credentials. Like:
   </appSettings>
 </configuration>
 ```
+## Examples
+
+In this examples we try to fetch all vacancies, create a candidate, apply to the vacancy and add a file to it. 
+
+//TODO
+
+### 
+
+# Oak Street
+
+Looking for a partners to create your career site? Visit [Oak Street website](https://oakstreet.be)
 
 
